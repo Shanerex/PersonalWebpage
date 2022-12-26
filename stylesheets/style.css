@@ -6,6 +6,10 @@ html {
     -webkit-text-size-adjust:100%
 }
 
+h2, h3 {
+    page-break-after: avoid;
+}
+
 body {
     margin: 0;
     background-image:-webkit-linear-gradient(top,#0ba360,#3cba92);
@@ -20,7 +24,17 @@ h1 {
     margin:.67em 0
 }
 
+.h5, h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
 
+small {
+    display:block;
+    font-size:80%;
+    line-height:1.58;
+    color:#777
+}
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     font-family:Oswald,Helvetica,Arial,sans-serif;
@@ -50,6 +64,11 @@ img, tr {
 
 p {
     margin: 0 0 12.5px;
+}
+
+h2, h3, p {
+    orphans: 3;
+    widows: 3;
 }
 
 button {
@@ -223,12 +242,32 @@ body.white {
     user-select:none;
 }
 
-/* .center-btn {
-    position: relative;
-    margin: 0 auto;
-    left: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    align-items: center;
-    justify-content: center;
-} */
+.btn:hover {
+    background-image:-webkit-linear-gradient(top,#0ba360,#3cba92);
+    background-image:-o-linear-gradient(top,#0ba360 0,#3cba92 100%);
+    background-image:linear-gradient(180deg,#0ba360 0,#3cba92);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ba360",endColorstr="#3cba92",GradientType=0)
+}
+
+.h5.date-title,h5.date-title{
+    margin-top:3px;
+    margin-bottom:20px
+}
+
+.education a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.h5 small {
+    display: inline;
+    font-weight:400;
+    line-height:1;
+    color:#777;
+}
+
+h3, h4 {
+    font-size: 20px;
+}
