@@ -6,115 +6,324 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shane Rex | About Me</title>
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 </head>
 <body class="">
     <div class="background-color-layer" style="background-image: url('images/mypic.jpeg');"></div>
     <main class="content-wrapper">
+      <header class="header">
+        <nav class="nav nav-container">
+          <div class="nav_menu">
+            <ul class="nav_list">
+              <li class="nav_list" onclick="toggleHeader('home_link')">
+                <a href="#home" class="nav_link home_link active-link"
+                  ><i class="uil uil-estate nav_icon"></i>Home</a
+                >
+              </li>
+  
+              <li class="nav_list" onclick="toggleHeader('about_link')">
+                <a href="#about" class="nav_link about_link"
+                  ><i class="uil uil-user nav_icon"></i>About</a
+                >
+              </li>
+  
+              <li class="nav_list" onclick="toggleHeader('education_link')">
+                <a href="#education" class="nav_link education_link"
+                  ><i class="uil uil-book nav_icon"></i>Education</a
+                >
+              </li>
+  
+              <li class="nav_list" onclick="toggleHeader('languages_link')">
+                <a href="#languages" class="nav_link languages_link">
+                  <i class="uil uil-language nav_icon"></i>
+                  Languages</a>
+              </li>
+  
+              <li class="nav_list" onclick="toggleHeader('activities_link')">
+                <a href="#activities" class="nav_link activities_link"
+                  ><i class="uil uil-tennis-ball nav_icon"></i>Activities</a
+                >
+              </li>
+
+              <li class="nav_list" onclick="toggleHeader('skills_link')">
+                <a href="#skills" class="nav_link skills_link"
+                  ><i class="uil uil-file-alt nav_icon"></i>Skills</a
+                >
+              </li>
+  
+              <li class="nav_list" onclick="toggleHeader('contact_link')">
+                <a href="#contactme" class="nav_link contact_link">
+                  <i class="uil uil-message nav_icon"></i>
+                  Contact</a
+                >
+              </li>
+            </ul>
+            
+        </nav>
+      </header>
       <!-- top white text -->
-        <header class="section-container white-text-container">
-            <div class="text-center">
-                <h1>I am Shane Rex</h1>
-                <p>A website about me.</p>
-                <p>
-                    <a class="fa-icon fa-icon-2x" href="https://www.instagram.com/shanerex03/" target="_blank" title="">
-                      <i class="fa fa-instagram"></i>
-                    </a>
-                    <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/shane-rex-sasikumar/" target="_blank" title="">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </p>
-            </div>
-        </header>
+      <section id="home">
+        <div class="section-container white-text-container">
+          <div class="text-center">
+              <h1>I am Shane Rex</h1>
+              <p>A website about me.</p>
+              <p>
+                  <a class="fa-icon fa-icon-2x" href="https://www.instagram.com/shanerex03/" target="_blank" title="">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/shane-rex-sasikumar/" target="_blank" title="">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </p>
+          </div>
+        </div>
+      </section>
+        
 
         <div class="container">
           <!-- about section -->
           <div class="row">
             <div class="col" style="float: left; width: 100%;">
-              <div class="card">
-                <div class="card-block">
-                  <h2>About Me</h2>
-                  <div class="row">
-                    <div class="col" style="float: left; width: auto; @media(min-width: 992px;){float: left}; width: 33.33333%;">
-                      <p><img src="./images/mypic.jpeg" alt="Me looking at the blue sky" class="img-responsive" style="height: min-content;"></p>
-                    </div>
-                    <div class="col" style="float: left; width: auto">
-                      <p>I am 21 years old. I am currently pursuing Bachelors degree in Computer Science and</p>
-                      <p>Engineering from Thiagarajar College of Engineering. I like coding and always wanted</p>
-                      <p>to make something useful for everyone. I like to explore new places and admire the</p>
-                      <p>beauty of that place. My favourite places to visit are Havelock, Bangalore, Kochi and</p>
-                      <p>Maldives. My favourite foods are Biryani, Dosa, Pasta and Noodles. My favourite cuisine</p>
-                      <p>however is Indian. Apart from these, I love sports. I am passionate about playing tennis.</p>
-                      <p>Other than that, I like to watch Cricket and Football.</p>
-                      <br><br>
-                      <p style="text-align: center; font-weight: bold;">Yeah that's all about me!</p>
-                      <br><br><br><br><br><br><br><br>
-                      <p>You can download my resume here: <button class="btn">Download</button></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--education details  -->
-              <div class="card">
-                <div class="card-block">
-                  <h2>Education</h2>
-                  <div class="row">
-                      <div class="col" style="float: left; width: auto;">
-                        <div class="education">
-                          <small class="date">2007-2015</small>
-                          <h3 class="h5 date-title">Primary School</h3>
-                          <p>Balakrishna Matric. Hr. Sec. School, Tirunelveli</p>
-                        </div>
-                      </div>
-                      <div class="col" style="float: left; width: auto;">
-                        <div class="education">
-                          <small class="date">2015-2019</small>
-                          <h3 class="h5 date-title">High School</h3>
-                          <p><a href="https://saralabirlaacademy.org/">Sarala Birla Academy, Bangalore</a></p>
-                        </div>
-                      </div>
-                      <div class="col" style="float: left; width: auto;">
-                        <div class="education">
-                          <small class="date">2019-Present</small>
-                          <h3 class="h5 date-title">Engineering</h3>
-                          <p><a href="https://tce.edu/">Thiagarajar College of Engineering, Madurai</a></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Languages known -->
+              <section id="about">
                 <div class="card">
                   <div class="card-block">
-                    <h2>Languages Known</h2>
+                    <h2>About Me</h2>
                     <div class="row">
-                        <div class="col" style="float: left; width: 30.33333%;">
-                          <div class="langugage">
-                            <h3 class="h5">Tamil  <small>Read/Write/Speak</small></h3>
-                          </div>
-                        </div>
-
-                        <div class="col" style="float: left; width: 30.33333%;">
-                          <div class="langugage">
-                            <h3 class="h5">English  <small>Read/Write/Speak</small></h3>
-                          </div>
-                        </div>
-
-                        <div class="col" style="float: left; width: 30.33333%;">
-                          <div class="langugage">
-                            <h3 class="h5">Hindi  <small>Speak</small></h3>
-                          </div>
-                        </div>
+                      <div class="col" style="float: left; width: 33.33333%; @media(min-width: 992px;){float: left}; width: 33.33333%;">
+                        <p><img src="./images/mypic.jpeg" alt="Me looking at the blue sky" class="img-responsive" style="height: min-content;"></p>
+                      </div>
+                      <div class="col" style="float: left; width: 66.666667%">
+                        <p>I am 21 years old. I am currently pursuing Bachelors degree in Computer Science and</p>
+                        <p>Engineering from Thiagarajar College of Engineering. I like coding and always wanted</p>
+                        <p>to make something useful for everyone. I like to explore new places and admire the</p>
+                        <p>beauty of that place. My favourite places to visit are Havelock, Bangalore, Kochi and</p>
+                        <p>Maldives. My favourite foods are Biryani, Dosa, Pasta and Noodles. My favourite</p>
+                        <p>cuisine however is Indian. Apart from these, I love sports. I am passionate about</p>
+                        <p>playing tennis. Other than that, I like to watch Cricket and Football.</p>
+                        <br><br>
+                        <p style="text-align: center; font-weight: bold;">Yeah that's all about me!</p><br>
+                        <p style="text-align: center;">You can download my resume here: <button class="btn">Download</button></p>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </section>
+              
 
+              <!--education details  -->
+              <section id="education">
+                <div class="card">
+                  <div class="card-block">
+                    <h2>Education</h2>
+                    <div class="row">
+                        <div class="col" style="float: left; width: auto;">
+                          <div class="education">
+                            <small class="date">2007-2015</small>
+                            <h3 class="title date-title">Primary School</h3>
+                            <p>Balakrishna Matric. Hr. Sec. School, Tirunelveli</p>
+                          </div>
+                        </div>
+                        <div class="col" style="float: left; width: auto;">
+                          <div class="education">
+                            <small class="date">2015-2019</small>
+                            <h3 class="title date-title">High School</h3>
+                            <p><a href="https://saralabirlaacademy.org/">Sarala Birla Academy, Bangalore</a></p>
+                          </div>
+                        </div>
+                        <div class="col" style="float: left; width: auto;">
+                          <div class="education">
+                            <small class="date">2019-Present</small>
+                            <h3 class="title date-title">Engineering</h3>
+                            <p><a href="https://tce.edu/">Thiagarajar College of Engineering, Madurai</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+              
+
+                <!-- Languages known -->
+                <section id="languages">
+                  <div class="card">
+                    <div class="card-block">
+                      <h2>Languages Known</h2>
+                      <div class="row">
+                          <div class="col" style="float: left; width: 33.33333%;">
+                            <div class="langugage">
+                              <h3 class="title">Tamil  <small>Read/Write/Speak</small></h3>
+                            </div>
+                          </div>
+  
+                          <div class="col text-center" style="float: left; width: 33.33333%;">
+                            <div class="langugage">
+                              <h3 class="title">English  <small>Read/Write/Speak</small></h3>
+                            </div>
+                          </div>
+  
+                          <div class="col text-center" style="float: left; width: 33.33333%;">
+                            <div class="langugage">
+                              <h3 class="title">Hindi  <small>Speak</small></h3>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+
+                <!-- Activities -->
+                <section id="activities">
+                  <div class="card">
+                    <div class="card-block">
+                      <h2>Co&Extra Curricular Activities</h2>
+                      <div class="row">
+                          <div class="col" style="float: left; width: 33%;">
+                            <div class="education">
+                              <h3 class="title date-title">Captain</h3>
+                              <p>TCE Tennis Team</p>
+                            </div>
+                          </div>
+                          <div class="col" style="float: left; width: 33%;">
+                            <div class="education">
+                              <h3 class="title date-title">Coordinator</h3>
+                              <p>TCE Coders Club</p>
+                            </div>
+                          </div>
+                          <div class="col" style="float: left; width: 33%;">
+                            <div class="education">
+                              <h3 class="title date-title">Winners</h3>
+                              <p>Anna University Zonals (Tennis Men)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section id="skills">
+                  <div class="card">
+                    <div class="card-block">
+                      <h2>Technical Skills</h2>
+                      <div class="row">
+                          <div class="col" style="float: left; width: 20%;">
+                            <div class="skill">
+                              <h3 class="title">Java</h3>
+                            </div>
+                          </div>
+  
+                          <div class="col text-center" style="float: left; width: 20%;">
+                            <div class="skill">
+                              <h3 class="title">Kotlin</h3>
+                            </div>
+                          </div>
+  
+                          <div class="col text-center" style="float: left; width: 20%;">
+                            <div class="skill">
+                              <h3 class="title">Android</h3>
+                            </div>
+                          </div>
+
+                          <div class="col text-center" style="float: left; width: 20%;">
+                            <div class="skill">
+                              <h3 class="title">C</h3>
+                            </div>
+                          </div>
+
+                          <div class="col text-center" style="float: left; width: 20%;">
+                            <div class="skill">
+                              <h3 class="title">Python</h3>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+
+                  <!-- Contact Me -->
+                <section id="contactme">
+                  <div class="card">
+                    <div class="card-block">
+                      <h2>Contact Me</h2>
+                      <div class="row">
+                          <div class="col" style="float: left; width: 25%;">
+                            <div class="contact">
+                              <p>
+                                <a class="fa-icon fa-icon-2x" href="https://api.whatsapp.com/send/?phone=%2B916362323559" target="_blank">
+                                  <i class="fa fa-whatsapp"></i>
+                                </a>
+                              </p>
+                              <h3 class="title date-title">Whatsapp</h3>
+                              <h3 class="title"><small>+916362323559</small></h3>
+                            </div>
+                          </div>
+                          <div class="col" style="float: left; width: 25%;">
+                            <div class="contact">
+                              <p>
+                                <a class="fa-icon fa-icon-2x" href="https://github.com/Shanerex" target="_blank">
+                                  <i class="fa fa-github"></i>
+                                </a>
+                              </p>
+                              <h3 class="title date-title">GitHub</h3>
+                              <h3 class="title"><small>ShaneRex</small></h3>
+                            </div>
+                          </div>
+                          <div class="col" style="float: left; width: 25%;">
+                            <div class="contact">
+                              <p>
+                                <a class="fa-icon fa-icon-2x" href="mailto: shanerexsasikumar@gmail.com" target="_blank">
+                                  <i class="fa fa-google"></i>
+                                </a>
+                              </p>
+                              <h3 class="title date-title">Gmail</h3>
+                              <h3 class="title"><small>shanerexsasikumar@gmail.com</small></h3>
+                            </div>
+                          </div>
+                          <div class="col" style="float: left; width: 25%;">
+                            <div class="contact">
+                              <p>
+                                <a class="fa-icon fa-icon-2x" href="https://t.me/shanerex03" target="_blank">
+                                  <i class="fa fa-telegram"></i>
+                                </a>
+                              </p>
+                              <h3 class="title date-title">Telegram</h3>
+                              <h3 class="title"><small>@shanerex03</small></h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+                
               </div>
             </div>
           </div>
-        </div>
     </main>
+    <footer class="footer-container white-text-container">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="float: left; width: 100%;">
+            <div class="text-center">
+              <ul class="footer-list">
+                <li><a href="#about" onclick="toggleHeader('about_link')">About</a></li>
+                <li><a href="#education" onclick="toggleHeader('education_link')">Education</a></li>
+                <li><a href="#languages" onclick="toggleHeader('languages_link')">Languages</a></li>
+                <li><a href="#activities" onclick="toggleHeader('activities_link')">Activities</a></li>
+                <li><a href="#skills" onclick="toggleHeader('skills_link')">Skills</a></li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <p>Made with ❤️ by Shane Rex</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="scrollup">
+      <i class="uil uil-arrow-up scrollup_icon" onclick="toggleHeader('home_link')"></i>
+    </a>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700|Oswald);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+*,:after,:before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
+    scroll-behavior: smooth;
     font-family:sans-serif;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%
@@ -10,8 +22,17 @@ h2, h3 {
     page-break-after: avoid;
 }
 
+p {
+    margin: 0 0 12.5px;
+}
+
 body {
     margin: 0;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.58;
+    color: #555555;
+    background-color: #fff;
     background-image:-webkit-linear-gradient(top,#0ba360,#3cba92);
     background-image:-o-linear-gradient(top,#0ba360 0,#3cba92 100%);
     background-image:linear-gradient(180deg,#0ba360 0,#3cba92);
@@ -19,14 +40,19 @@ body {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ba360",endColorstr="#3cba92",GradientType=0)
 }
 
+
+
 h1 {
     font-size:2em;
     margin:.67em 0
 }
 
-.h5, h5 {
+.title {
     font-weight: 700;
     font-size: 18px;
+    font-family:Lato,Helvetica,Arial,sans-serif;
+    line-height:1.1;
+    color:#000
 }
 
 small {
@@ -50,6 +76,10 @@ small {
 
 .h1,h1 { 
     font-size:63px
+}
+
+h2 {
+    font-size: 27px;
 }
 
 img {
@@ -96,10 +126,10 @@ button,input,select,textarea{
     box-shadow:inset 0 -40px 60px 10px #0ba360
 }
 
-.content-wrapper {
+/* .content-wrapper {
     position:relative;
     z-index:1
-}
+} */
 
 
 .fa-icon{
@@ -118,7 +148,7 @@ button,input,select,textarea{
     font-size:24px
 }
 
-.white-text-container,.fa-icon,.white-text-container a,.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p{color:#fff}
+.white-text-container.fa-icon,.white-text-container a,.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p{color:#fff}
 
 body.white {
     background-color:#fff;
@@ -202,11 +232,21 @@ body.white {
     padding:4rem
 }
 
-@media (min-width:992px) {
+@media screen and (min-width:992px){
     .card .card-block {
         padding:6rem
     }
+
+    .scrollup {
+        right: 1.5rem;
+        padding: 0.25rem 0.4rem;
+    }
+
+    .scrollup_icon {
+        font-size: 1.25rem;
+      }
 }
+
 
 .img-responsive{
     display:block;
@@ -240,9 +280,12 @@ body.white {
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none;
+    background-color: inherit;
+    transition: 0.3s;
 }
 
 .btn:hover {
+    color: #fff;
     background-image:-webkit-linear-gradient(top,#0ba360,#3cba92);
     background-image:-o-linear-gradient(top,#0ba360 0,#3cba92 100%);
     background-image:linear-gradient(180deg,#0ba360 0,#3cba92);
@@ -250,7 +293,7 @@ body.white {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ba360",endColorstr="#3cba92",GradientType=0)
 }
 
-.h5.date-title,h5.date-title{
+.title.date-title{
     margin-top:3px;
     margin-bottom:20px
 }
@@ -261,7 +304,7 @@ body.white {
     color: inherit;
 }
 
-.h5 small {
+.title small {
     display: inline;
     font-weight:400;
     line-height:1;
@@ -271,3 +314,147 @@ body.white {
 h3, h4 {
     font-size: 20px;
 }
+
+.footer-container {
+    padding: 20px 0 30px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list li{
+    display: inline;
+    float: left;
+}
+
+.footer-list li a {
+    display: block;
+    padding: 10px;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.nav {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nav-container {
+    max-width: 968px;
+    margin-left: 120px;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        height: 3rem;
+      }
+    
+      .nav_menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px #00000026;
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+      }
+
+      .nav_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    
+      .nav_list li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .nav_icon {
+        font-size: 1.2rem;
+      }
+
+}  
+
+@media screen and (max-width: 350px) {
+    .nav-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    
+      .nav_menu {
+        padding: 2rem 0.25rem 4rem;
+      }
+    
+      .nav_link {
+        column-gap: 0;
+      }
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+.active-link,
+.nav_link:hover {
+  color: #555555;
+  font-weight: 600;
+}
+
+.scroll-header {
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px #5e687949;
+    background-image:-webkit-linear-gradient(top,#0ba360,#3cba92);
+    background-image:-o-linear-gradient(top,#0ba360 0,#3cba92 100%);
+    background-image:linear-gradient(180deg,#0ba360 0,#3cba92);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ba360",endColorstr="#3cba92",GradientType=0)
+}
+
+.scrollup {
+    position: fixed;
+  right: 2.5rem;
+  bottom: -20%;
+  opacity: 0.8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup_icon {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+
+  .show-scroll {
+    bottom: 3rem;
+  }
